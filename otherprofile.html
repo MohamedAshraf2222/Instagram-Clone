@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/insta.css">
+    <link rel="shortcut icon" href="img/Instagram-icon.png" type="image/x-icon" />
+    <meta name="description" content="Instagram application" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>OtherProfile</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="nav-background"></div>
+        <div class="container display-flex space-between align-items-center">
+
+            <div class="logo">
+                <a href="insta.html">
+                    <img src="img/Instagram_logo.png" alt="Instagram_logo">
+                </a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder=" Search">
+            </div>
+            <div class="icons">
+                <ul class="display-flex">
+                    <li><a href="insta.html"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                    <li><a onclick="onclickfun()" class="addpost-btn" href="#"><i class="far fa-plus-square"></i></a></li>
+                    <li><a onclick="onclickcompassfun()" href="#"><i class="far fa-compass"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="profile.html"><img src="img/profile.jpg" alt="profile"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="background-window-addpost display-flex align-items-center justify-content-center">
+            <div class="popup-content-addpost display-flex align-items-center justify-content-center">
+                <div onclick="onclickclose()" class="close-addpost">+</div>
+                    <form class="img-form" action="/action_page.php">
+                        <label for="img">Select image:</label>
+                        <input type="file" id="img" name="img" accept="image/*">
+                        <br />
+                        <label for="post-title">Post Title:</label>
+                        <input type="text" id="post-title">
+                        <button type="submit">Submit</button>
+                    </form>
+            </div>
+        </div>
+        <div class="background-window-requests display-flex align-items-center justify-content-center">
+            <div class="popup-content-addpost display-flex align-items-center justify-content-center">
+                <div onclick="onclickcompassclosefun()" class="close-addpost">+</div>
+                <div class="display-flex flex-col">
+                <div class="line"></div>
+                <div class="accept-reject-content display-flex justify-content-center align-items-center">
+                    <img src="img/profile-2.jpg" alt="profile-pic">
+                    <p>Alaa ahmed</p>
+                    <button>Accept</button>
+                    <button>Reject</button>
+                </div>
+                <div class="line"></div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="profile-header display-flex">
+                <img src="img/profile-4.jpg" alt="profile.jpg">
+                <div class="profile-header-content">
+                    <div class="profile-name display-flex align-items-center">
+                        <h2>Ali1244</h2>
+                        <a class="switch switch-other" href="#">Follow</a>
+                        <a class="switch switch-other" href="#">Message</a>
+                    </div>
+                    </a>
+                    <div class="followers display-flex">
+                        <p>1 <span>Posts</span></p>
+                        <p>10 <span>Followers</span></p>
+                        <p>20 <span>Following</span></p>
+                    </div>
+                    <div class="profile-discription">
+                        <h3>Ali</h3>
+                        <p>Discription</p>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-border"></div>
+            <div class="profile-posts display-flex align-items-center justify-content-center">
+                <i class="fa-solid fa-table-cells"></i>
+                <p>POSTS</p>
+            </div>
+            <div class="posts-grid">
+                <div class="grid">
+                <a href="#">
+                    <img src="img/profile-1.jpg" alt="post-img">
+                </a>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>
